@@ -143,12 +143,6 @@ form button:active {
 }
 
 @media (max-width: 768px) {
-  .logo {
-    max-width: 80px;
-  }
-}
-
-@media (max-width: 768px) {
   .container {
     padding: 15px;
   }
