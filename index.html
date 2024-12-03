@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid's Dev Team Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="icon" href="https://yt3.googleusercontent.com/Yyro1wvm--xSHT6TcFj2EAnIp09MdrHkhhWmIfbDIjY8BRhy-6WxqwVDiaqWPKWvaiGGz7sd=s160-c-k-c0x00ffffff-no-rj" sizes="16x16" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://yt3.googleusercontent.com/Yyro1wvm--xSHT6TcFj2EAnIp09MdrHkhhWmIfbDIjY8BRhy-6WxqwVDiaqWPKWvaiGGz7sd=s160-c-k-c0x00ffffff-no-rj" 
+                 alt="Squid's Development Logo" class="logo">
+            <h1>Squid's Development Team</h1>
+            <p>Apply now to join the team and contribute to amazing projects!</p>
+        </header>
+
+        <section class="dropdown-section">
+            <div class="dropdown">
+                <button class="dropdown-header">Role Summaries</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><strong>Modelers:</strong> Create detailed 3D models and assets for the game.</li>
+                        <li><strong>Scripters:</strong> Develop scripts to bring game mechanics to life.</li>
+                        <li><strong>Builders:</strong> Design and build immersive environments.</li>
+                        <li><strong>UI Designers:</strong> Craft user interfaces for an engaging player experience.</li>
+                        <li><strong>Social Media Team:</strong> Promote the game and interact with the community.</li>
+                        <li><strong>Discord Manager:</strong> Oversee server organization and moderation.</li>
+                        <li><strong>Discord Moderators:</strong> Maintain a positive community and enforce rules.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-header">Profit Allocation</button>
+                <div class="dropdown-content">
+                    <p>Profits are distributed after generating 100k Robux:</p>
+                    <ul>
+                        <li><strong>Scripters:</strong> 17%</li>
+                        <li><strong>UI Designers:</strong> 10%</li>
+                        <li><strong>Modelers:</strong> 9%</li>
+                        <li><strong>Builders:</strong> 7%</li>
+                        <li><strong>Social Media Team:</strong> 4%</li>
+                        <li><strong>Discord Manager:</strong> 2%</li>
+                        <li><strong>Discord Moderators:</strong> 1%</li>
+                        <li>50% of profits are allocated for advertising.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Application Form</h2>
+            <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.335621916" required>
+
+                <label for="discord">Discord Username:</label>
+                <input type="text" id="discord" name="entry.602348891" required>
+
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="entry.148444985" required>
+
+                <label for="role">Preferred Role:</label>
+                <select id="role" name="entry.1159213901" required>
+                    <option value="Modeler">Modeler</option>
+                    <option value="Scripter">Scripter</option>
+                    <option value="Builder">Builder</option>
+                    <option value="UI Designer">UI Designer</option>
+                    <option value="Social Media Team">Social Media Team</option>
+                    <option value="Discord Manager">Discord Manager</option>
+                    <option value="Discord Moderator">Discord Moderator</option>
+                </select>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="entry.166027612" rows="5" placeholder="Describe your experience with this role." required></textarea>
+
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="entry.1707440890" required>
+
+                <button type="submit" id="submitBtn">Submit Application</button>
+            </form>
+        </section>
+
+        <iframe name="hiddenFrame" style="display:none;"></iframe>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
