@@ -142,6 +142,20 @@ form button:active {
   object-fit: cover;
 }
 
+.dropdown-content h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+.general-allocations {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 15px;
