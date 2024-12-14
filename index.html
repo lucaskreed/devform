@@ -56,8 +56,7 @@
 
         <section class="form-section">
             <h2>Application Form</h2>
-            <!-- Correct the action URL -->
-            <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" target="hiddenFrame">
+            <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" onsubmit="submitForm(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="entry.335621916" required>
 
