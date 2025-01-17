@@ -1,80 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8fafc;
-  color: #333;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 28px;
-  color: #2c3e50;
-}
-
-header p {
-  font-size: 16px;
-  color: #555;
-}
-
 .dropdown-section {
   margin-bottom: 20px;
 }
 
-form label {
-  display: block;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #2c3e50;
+.dropdown {
+  margin-bottom: 15px;
 }
 
-form select {
+.dropdown-header {
   width: 100%;
-  padding: 12px;
-  margin-top: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: #f8f9fa;
-}
-
-form select:focus {
-  border-color: #1d72b8;
-  outline: none;
-}
-
-form button {
-  margin-top: 30px;
-  width: 100%;
-  padding: 12px;
-  background: #1d72b8;
+  background-color: #1d72b8;
   color: white;
   border: none;
-  border-radius: 8px;
+  padding: 12px 15px;
   font-size: 18px;
-  font-weight: bold;
+  text-align: left;
   cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-form button:hover {
-  background: #155a8c;
+.dropdown-header:hover {
+  background-color: #155a8c;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.dropdown-content li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
 }
