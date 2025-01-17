@@ -3,88 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Role Application</title>
+    <title>Spilled Ink Studios Team Application</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="icon" href="https://yt3.googleusercontent.com/0hSdA_OkXAqvVKWGMxdXVb3WSQ-tCxtRHpdFAA9wiA0O7o1T1Q8n1Cd2lefsbBiJp-nYw-8dxA=s160-c-k-c0x00ffffff-no-rj" sizes="16x16" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <h1>Apply for Team Roles</h1>
-        <form id="applicationForm">
-            <div class="dropdown-section">
-                <div class="dropdown">
-                    <button type="button" class="dropdown-header">Executive Roles</button>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>Founder</li>
-                            <li>Studio Director</li>
-                            <li>Creative Director</li>
-                            <li>Community Engagement Lead</li>
-                            <li>Developer Outreach Lead</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button type="button" class="dropdown-header">Community Engagement Lead</button>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>Community Manager</li>
-                            <li>Sr. Moderators</li>
-                            <li>Moderators</li>
-                            <li>Forum Moderator</li>
-                            <li>Community Events Lead</li>
-                            <li>Event Coordinator</li>
-                            <li>Event Manager</li>
-                            <li>Server Events Lead</li>
-                            <li>Event Host</li>
-                            <li>Support Specialist</li>
-                            <li>Help Desk Agent</li>
-                            <li>Technical Support Agent</li>
-                            <li>Marketing Specialist</li>
-                            <li>Social Media Manager</li>
-                            <li>Content Strategist</li>
-                            <li>Advertising Coordinator</li>
-                            <li>PR Specialist</li>
-                        </ul>
-                    </div>
+        <header>
+            <img src="https://yt3.googleusercontent.com/0hSdA_OkXAqvVKWGMxdXVb3WSQ-tCxtRHpdFAA9wiA0O7o1T1Q8n1Cd2lefsbBiJp-nYw-8dxA=s160-c-k-c0x00ffffff-no-rj"
+                 alt="Spilled Ink Studios Logo" class="logo">
+            <h1>Spilled Ink Studios</h1>
+            <p>Join the team and help create something extraordinary!</p>
+        </header>
+
+        <section class="dropdown-section">
+            <div class="dropdown">
+                <button class="dropdown-header">Role Summaries</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><strong>Builder/Modeler:</strong> Design and build 3D models, environments, and levels.</li>
+                        <li><strong>Animator:</strong> Create lifelike character and object animations.</li>
+                        <li><strong>Scripter:</strong> Implement gameplay mechanics and interactive systems.</li>
+                        <li><strong>UI/UX Designer:</strong> Create intuitive user interfaces and optimize user experience.</li>
+                        <li><strong>Bot Developer:</strong> Develop and maintain bots for automation and user interaction.</li>
+                        <li><strong>Software Engineer:</strong> Build core game systems and software components.</li>
+                        <li><strong>Graphic Designer:</strong> Design visual assets like icons, logos, and banners.</li>
+                        <li><strong>Artist:</strong> Create concept art and visual designs for the game.</li>
+                        <li><strong>Video Editor:</strong> Edit promotional and gameplay videos for the studio.</li>
+                        <li><strong>Audio Producer:</strong> Design sound effects and background music for games.</li>
+                        <li><strong>Moderator:</strong> Ensure smooth community interactions by enforcing rules.</li>
+                        <li><strong>Forums Moderator:</strong> Oversee forum interactions and manage discussions.</li>
+                        <li><strong>Community Event Coordinator:</strong> Organize community events and activities.</li>
+                        <li><strong>Community Event Host:</strong> Host and manage events for the community.</li>
+                        <li><strong>Server Event Coordinator:</strong> Plan and manage events on the server.</li>
+                        <li><strong>Server Event Host:</strong> Facilitate and run events on the server.</li>
+                        <li><strong>Game Reviewer:</strong> Review games and provide constructive feedback.</li>
+                        <li><strong>Developer Relations Specialist:</strong> Manage relationships with other developers and partners.</li>
+                        <li><strong>Help Desk Agent:</strong> Provide assistance and support to users and players.</li>
+                        <li><strong>Technical Support Agent:</strong> Solve technical issues for players and staff.</li>
+                        <li><strong>Social Media Manager:</strong> Manage social media platforms and content strategy.</li>
+                        <li><strong>Content Strategist:</strong> Plan and create content that aligns with studio goals.</li>
+                        <li><strong>Advertising Coordinator:</strong> Plan and execute advertising campaigns.</li>
+                        <li><strong>PR Specialist:</strong> Handle public relations and media outreach.</li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="dropdown-section">
-                <div class="dropdown">
-                    <button type="button" class="dropdown-header">Creative Director</button>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>Creative Team Lead</li>
-                            <li>UI/UX Designer</li>
-                            <li>Graphic Designer</li>
-                            <li>Artist</li>
-                            <li>Video Editor</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <section class="form-section">
+            <h2>Application Form</h2>
+            <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.335621916" required>
 
-            <div class="dropdown-section">
-                <div class="dropdown">
-                    <button type="button" class="dropdown-header">Studio Director</button>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>Game Development Lead</li>
-                            <li>Builder/Modeler</li>
-                            <li>Animator</li>
-                            <li>Audio Producer</li>
-                            <li>Scripter</li>
-                            <li>Bot Developer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <label for="discord">Discord Username:</label>
+                <input type="text" id="discord" name="entry.602348891" required>
 
-            <button id="submitBtn" type="submit">Submit Application</button>
-        </form>
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="entry.148444985" required>
+
+                <label for="role">Preferred Role:</label>
+                <select id="role" name="entry.1159213901" required>
+                    <option value="Builder/Modeler">Builder/Modeler</option>
+                    <option value="Animator">Animator</option>
+                    <option value="Scripter">Scripter</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="Bot Developer">Bot Developer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Artist">Artist</option>
+                    <option value="Video Editor">Video Editor</option>
+                    <option value="Audio Producer">Audio Producer</option>
+                    <option value="Moderator">Moderator</option>
+                    <option value="Forums Moderator">Forums Moderator</option>
+                    <option value="Community Event Coordinator">Community Event Coordinator</option>
+                    <option value="Community Event Host">Community Event Host</option>
+                    <option value="Server Event Coordinator">Server Event Coordinator</option>
+                    <option value="Server Event Host">Server Event Host</option>
+                    <option value="Game Reviewer">Game Reviewer</option>
+                    <option value="Developer Relations Specialist">Developer Relations Specialist</option>
+                    <option value="Help Desk Agent">Help Desk Agent</option>
+                    <option value="Technical Support Agent">Technical Support Agent</option>
+                    <option value="Social Media Manager">Social Media Manager</option>
+                    <option value="Content Strategist">Content Strategist</option>
+                    <option value="Advertising Coordinator">Advertising Coordinator</option>
+                    <option value="PR Specialist">PR Specialist</option>
+                </select>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="entry.166027612" rows="5" placeholder="Describe your experience with this role." required></textarea>
+
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="entry.1707440890" required>
+
+                <button type="submit" id="submitBtn">Submit Application</button>
+            </form>
+        </section>
+
+        <iframe name="hiddenFrame" style="display:none;"></iframe>
     </div>
-
-    <iframe id="hiddenFrame" name="hiddenFrame" style="display:none;"></iframe>
 
     <script src="scripts.js"></script>
 </body>
