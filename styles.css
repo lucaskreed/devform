@@ -63,7 +63,7 @@ header p {
 }
 
 .dropdown-content {
-  display: none;
+  display: none; /* Default hidden */
   background-color: #f9f9f9;
   margin-top: 5px;
   padding: 15px;
