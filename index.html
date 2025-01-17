@@ -14,7 +14,7 @@
     </header>
 
     <form id="applicationForm" onsubmit="submitForm(event)">
-      <!-- Role Descriptions Dropdown -->
+      <!-- Dropdown for Role Descriptions -->
       <div class="dropdown-section">
         <button class="dropdown-header">Role Descriptions</button>
         <div class="dropdown-content">
@@ -23,12 +23,11 @@
             <li><strong>Community Manager</strong>: Responsible for managing community engagement.</li>
             <li><strong>Game Development Lead</strong>: Oversees game development projects.</li>
             <li><strong>Creative Director</strong>: Manages design and creative aspects.</li>
-            <!-- Add more role descriptions here -->
           </ul>
         </div>
       </div>
 
-      <!-- Profit Allocations Dropdown -->
+      <!-- Dropdown for Profit Allocations -->
       <div class="dropdown-section">
         <button class="dropdown-header">Profit Allocations</button>
         <div class="dropdown-content">
@@ -41,18 +40,18 @@
         </div>
       </div>
 
-      <!-- Team and Preferred Role Selection -->
+      <!-- Team and Role Selection -->
       <div class="dropdown-section">
         <label for="teamSelect">Select Team:</label>
-        <select id="teamSelect">
+        <select id="teamSelect" onchange="updateRoleOptions()">
           <option value="community">Community Engagement</option>
           <option value="game-dev">Game Development</option>
           <option value="creative">Creative Team</option>
-          <!-- More options as needed -->
         </select>
+        
         <label for="preferredRole">Preferred Role:</label>
         <select id="preferredRole">
-          <!-- This will be populated dynamically -->
+          <!-- Options will be dynamically populated based on the team selection -->
         </select>
       </div>
 
