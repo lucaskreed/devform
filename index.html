@@ -1,64 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Role Selection Form</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spilled Ink Studios Staff Team Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="icon" href="https://yt3.googleusercontent.com/0hSdA_OkXAqvVKWGMxdXVb3WSQ-tCxtRHpdFAA9wiA0O7o1T1Q8n1Cd2lefsbBiJp-nYw-8dxA=s160-c-k-c0x00ffffff-no-rj" sizes="16x16" type="image/x-icon">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Role Selection Form</h1>
-      <p>Select your team and preferred role, then submit the form.</p>
-    </header>
+    <div class="container">
+        <header>
+            <img src="https://yt3.googleusercontent.com/0hSdA_OkXAqvVKWGMxdXVb3WSQ-tCxtRHpdFAA9wiA0O7o1T1Q8n1Cd2lefsbBiJp-nYw-8dxA=s160-c-k-c0x00ffffff-no-rj"
+                 alt="Spilled Ink Studios Logo" class="logo">
+            <h1>Spilled Ink Studios Staff Team Application</h1>
+            <p>Join the team and help create something extraordinary!</p>
+        </header>
 
-    <form id="applicationForm" onsubmit="submitForm(event)">
-      <!-- Dropdown for Role Descriptions -->
-      <div class="dropdown-section">
-        <button class="dropdown-header">Role Descriptions</button>
-        <div class="dropdown-content">
-          <h4>Role Descriptions</h4>
-          <ul>
-            <li><strong>Community Manager</strong>: Responsible for managing community engagement.</li>
-            <li><strong>Game Development Lead</strong>: Oversees game development projects.</li>
-            <li><strong>Creative Director</strong>: Manages design and creative aspects.</li>
-          </ul>
-        </div>
-      </div>
+        <section class="form-section">
+            <h2>Application Form</h2>
+            <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.335621916" required>
 
-      <!-- Dropdown for Profit Allocations -->
-      <div class="dropdown-section">
-        <button class="dropdown-header">Profit Allocations</button>
-        <div class="dropdown-content">
-          <h4>Profit Allocations</h4>
-          <ul class="general-allocations">
-            <li>50% - Game Developers</li>
-            <li>20% - Creative Team</li>
-            <li>30% - Community Engagement</li>
-          </ul>
-        </div>
-      </div>
+                <label for="discord">Discord Username:</label>
+                <input type="text" id="discord" name="entry.602348891" required>
 
-      <!-- Team and Role Selection -->
-      <div class="dropdown-section">
-        <label for="teamSelect">Select Team:</label>
-        <select id="teamSelect" onchange="updateRoleOptions()">
-          <option value="community">Community Engagement</option>
-          <option value="game-dev">Game Development</option>
-          <option value="creative">Creative Team</option>
-        </select>
-        
-        <label for="preferredRole">Preferred Role:</label>
-        <select id="preferredRole">
-          <!-- Options will be dynamically populated based on the team selection -->
-        </select>
-      </div>
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="entry.148444985" required>
 
-      <button type="submit" id="submitBtn">Submit</button>
-    </form>
-  </div>
+                <label for="team">Preferred Team:</label>
+                <select id="team" name="entry.1159213901" required>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Development">Development</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Community Engagement">Community Engagement</option>
+                    <option value="Developer Outreach">Developer Outreach</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Support">Support</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Events">Events</option>
+                </select>
 
-  <script src="scripts.js"></script>
+                <div class="dropdown-section">
+                    <label for="role">Preferred Role:</label>
+                    <select id="role" name="entry.1159213901" required>
+                        <!-- Game Development Team Roles -->
+                        <optgroup label="Game Development">
+                            <option value="Scripter">Scripter</option>
+                            <option value="Builder/Modeler">Builder/Modeler</option>
+                            <option value="Animator">Animator</option>
+                        </optgroup>
+
+                        <!-- Development Team Roles -->
+                        <optgroup label="Development">
+                            <option value="Bot Developer">Bot Developer</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                        </optgroup>
+
+                        <!-- Creative Team Roles -->
+                        <optgroup label="Creative">
+                            <option value="UI/UX Designer">UI/UX Designer</option>
+                            <option value="Graphic Designer">Graphic Designer</option>
+                            <option value="Artist">Artist</option>
+                            <option value="Video Editor">Video Editor</option>
+                            <option value="Audio Producer">Audio Producer</option>
+                        </optgroup>
+
+                        <!-- Community Engagement Roles -->
+                        <optgroup label="Community Engagement">
+                            <option value="Moderator">Moderator</option>
+                            <option value="Forums Moderator">Forums Moderator</option>
+                            <option value="Help Desk Agent">Help Desk Agent</option>
+                        </optgroup>
+
+                        <!-- Developer Outreach Roles -->
+                        <optgroup label="Developer Outreach">
+                            <option value="Developer Relations Specialist">Developer Relations Specialist</option>
+                        </optgroup>
+
+                        <!-- Marketing Roles -->
+                        <optgroup label="Marketing">
+                            <option value="Content Strategist">Content Strategist</option>
+                            <option value="Advertising Coordinator">Advertising Coordinator</option>
+                            <option value="PR Specialist">PR Specialist</option>
+                        </optgroup>
+
+                        <!-- Support Roles -->
+                        <optgroup label="Support">
+                            <option value="Support Specialist">Support Specialist</option>
+                            <option value="Technical Support Agent">Technical Support Agent</option>
+                        </optgroup>
+
+                        <!-- Social Media Roles -->
+                        <optgroup label="Social Media">
+                            <option value="Social Media Manager">Social Media Manager</option>
+                        </optgroup>
+
+                        <!-- Events Roles -->
+                        <optgroup label="Events">
+                            <option value="Community Event Coordinator">Community Event Coordinator</option>
+                            <option value="Community Event Host">Community Event Host</option>
+                            <option value="Server Event Coordinator">Server Event Coordinator</option>
+                            <option value="Server Event Host">Server Event Host</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <label for="experience">What relevant experience do you have?</label>
+                <textarea id="experience" name="entry.1167972643" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Spilled Ink Studios - Bringing creative minds together!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();  // Prevent form submission to allow JavaScript handling
+
+            // Simulate form submission and display confetti
+            canvasConfetti();
+            alert('Application submitted successfully!');
+            document.getElementById("applicationForm").reset();
+        }
+    </script>
 </body>
 </html>
