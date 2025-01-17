@@ -1,44 +1,93 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1d72b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #155a8c;
+}
+
+button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+}
+
+/* Dropdown Styling */
 .dropdown-section {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .dropdown {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .dropdown-header {
-  width: 100%;
-  background-color: #1d72b8;
-  color: white;
-  border: none;
-  padding: 12px 15px;
-  font-size: 18px;
-  text-align: left;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+    width: 100%;
+    background-color: #1d72b8;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .dropdown-header:hover {
-  background-color: #155a8c;
+    background-color: #155a8c;
 }
 
 .dropdown-content {
-  display: none;
-  background-color: #f9f9f9;
-  margin-top: 5px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content ul {
-  list-style-type: disc;
-  padding-left: 25px;
+    list-style-type: disc;
+    padding-left: 25px;
 }
 
 .dropdown-content li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
 }
