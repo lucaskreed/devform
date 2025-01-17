@@ -17,69 +17,6 @@
             <p>Join the team and help create something extraordinary!</p>
         </header>
 
-        <section class="dropdown-section">
-            <div class="dropdown">
-                <button class="dropdown-header">Role Summaries</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><strong>Founder & Head of Studio / CEO:</strong> Oversees the overall vision and direction of the studio.</li>
-                        <li><strong>Studio Executive Director:</strong> Leads and directs studio operations and strategy.</li>
-                        <li><strong>Creative Director Executive:</strong> Oversees creative decisions and vision for all studio projects.</li>
-                        <li><strong>Community Engagement Executive:</strong> Manages community relations and engagement strategies.</li>
-                        <li><strong>Developer Outreach Executive:</strong> Coordinates partnerships with developers and handles outreach.</li>
-                        <li><strong>Game Development Lead:</strong> Leads game development teams and ensures projects meet deadlines.</li>
-                        <li><strong>Development Lead:</strong> Oversees the technical and development aspects of the studio's projects.</li>
-                        <li><strong>Creative Lead:</strong> Leads the creative and design teams for visual, audio, and UI/UX work.</li>
-                        <li><strong>Community Manager:</strong> Manages the community, ensuring members have a positive experience.</li>
-                        <li><strong>Community Events Lead:</strong> Leads the planning and execution of community events.</li>
-                        <li><strong>Server Events Lead:</strong> Oversees server events and ensures smooth execution.</li>
-                        <li><strong>Marketing Specialist Lead:</strong> Manages the marketing team and drives studio promotions.</li>
-                        <li><strong>Support Specialist Lead:</strong> Leads the support team and handles inquiries and issues.</li>
-                        <li><strong>Developer Outreach Lead:</strong> Manages developer relations and collaborations.</li>
-                        <li><strong>Game Reviewer:</strong> Reviews and evaluates games submitted for features or reviews.</li>
-                        <li><strong>Developer Relations Specialist:</strong> Acts as a liaison between the studio and developers.</li>
-                        <li><strong>Help Desk Agent:</strong> Provides support to the community and helps resolve issues.</li>
-                        <li><strong>Technical Support Agent:</strong> Assists with technical issues within the community or games.</li>
-                        <li><strong>Social Media Manager:</strong> Handles the studio's social media presence and content.</li>
-                        <li><strong>Content Strategist:</strong> Develops content strategies for promotion and engagement.</li>
-                        <li><strong>Advertising Coordinator:</strong> Plans and manages advertising campaigns for the studio.</li>
-                        <li><strong>PR Specialist:</strong> Manages public relations and communications for the studio.</li>
-                        <li><strong>Builder/Modeler:</strong> Builds and models 3D assets and environments for games.</li>
-                        <li><strong>Animator:</strong> Creates animations for characters, objects, and events.</li>
-                        <li><strong>Scripter:</strong> Writes code and scripts for gameplay mechanics and systems.</li>
-                        <li><strong>UI/UX Designer:</strong> Designs and improves user interfaces and user experiences.</li>
-                        <li><strong>Bot Developer:</strong> Develops bots and automation tools for the community and studio use.</li>
-                        <li><strong>Software Engineer:</strong> Works on software development for the studio's tools and services.</li>
-                        <li><strong>Graphic Designer:</strong> Designs visual assets for branding and promotional material.</li>
-                        <li><strong>Artist:</strong> Creates concept art and visual designs for the studio's projects.</li>
-                        <li><strong>Video Editor:</strong> Edits and produces video content for promotional purposes.</li>
-                        <li><strong>Audio Producer:</strong> Creates sound effects, music, and voiceovers for games and media.</li>
-                        <li><strong>Moderator:</strong> Monitors and manages community interactions to ensure a positive environment.</li>
-                        <li><strong>Sr. Moderator:</strong> Senior-level moderators who oversee other moderators and ensure smooth operations.</li>
-                        <li><strong>Forums Moderator:</strong> Oversees forums and maintains order and engagement within the forums.</li>
-                        <li><strong>Community Event Coordinator:</strong> Plans and coordinates community events and activities.</li>
-                        <li><strong>Community Event Host:</strong> Hosts and manages community events to ensure smooth execution.</li>
-                        <li><strong>Server Event Coordinator:</strong> Plans and coordinates events hosted directly within the server.</li>
-                        <li><strong>Server Event Host:</strong> Hosts server-based events and activities for the community.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropdown-header">Profit Allocation</button>
-                <div class="dropdown-content">
-                    <p>Profits are distributed as follows:</p>
-
-                    <h4>General Allocations</h4>
-                    <ul>
-                        <li><strong>Group Funds:</strong> 40%</li>
-                        <li><strong>Advertisements:</strong> 20%</li>
-                        <li><strong>Member Payouts:</strong> 40%</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <section class="form-section">
             <h2>Application Form</h2>
             <form id="applicationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfaLuW03e4s-5WX8i0NJ6e_Br6ncGJI4VdB9PO8cFx-TOTwNw/formResponse" method="POST" onsubmit="submitForm(event)">
@@ -92,43 +29,61 @@
                 <label for="timezone">Time Zone:</label>
                 <input type="text" id="timezone" name="entry.148444985" required>
 
+                <label for="team">Preferred Team:</label>
+                <select id="team" name="entry.1159213901" required>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Development">Development</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Community Engagement">Community Engagement</option>
+                    <option value="Developer Outreach">Developer Outreach</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Support">Support</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Events">Events</option>
+                </select>
+
                 <label for="role">Preferred Role:</label>
                 <select id="role" name="entry.1159213901" required>
-                    <option value="Founder & Head of Studio / CEO">Founder & Head of Studio / CEO</option>
-                    <option value="Studio Executive Director">Studio Executive Director</option>
-                    <option value="Creative Director Executive">Creative Director Executive</option>
-                    <option value="Community Engagement Executive">Community Engagement Executive</option>
-                    <option value="Developer Outreach Executive">Developer Outreach Executive</option>
+                    <!-- Game Development Roles -->
                     <option value="Game Development Lead">Game Development Lead</option>
-                    <option value="Development Lead">Development Lead</option>
-                    <option value="Creative Lead">Creative Lead</option>
-                    <option value="Community Manager">Community Manager</option>
-                    <option value="Community Events Lead">Community Events Lead</option>
-                    <option value="Server Events Lead">Server Events Lead</option>
-                    <option value="Marketing Specialist Lead">Marketing Specialist Lead</option>
-                    <option value="Support Specialist Lead">Support Specialist Lead</option>
-                    <option value="Developer Outreach Lead">Developer Outreach Lead</option>
                     <option value="Game Reviewer">Game Reviewer</option>
-                    <option value="Developer Relations Specialist">Developer Relations Specialist</option>
-                    <option value="Help Desk Agent">Help Desk Agent</option>
-                    <option value="Technical Support Agent">Technical Support Agent</option>
-                    <option value="Social Media Manager">Social Media Manager</option>
-                    <option value="Content Strategist">Content Strategist</option>
-                    <option value="Advertising Coordinator">Advertising Coordinator</option>
-                    <option value="PR Specialist">PR Specialist</option>
+                    <option value="Scripter">Scripter</option>
                     <option value="Builder/Modeler">Builder/Modeler</option>
                     <option value="Animator">Animator</option>
-                    <option value="Scripter">Scripter</option>
-                    <option value="UI/UX Designer">UI/UX Designer</option>
+
+                    <!-- Development Roles -->
                     <option value="Bot Developer">Bot Developer</option>
                     <option value="Software Engineer">Software Engineer</option>
+
+                    <!-- Creative Roles -->
+                    <option value="UI/UX Designer">UI/UX Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
                     <option value="Artist">Artist</option>
                     <option value="Video Editor">Video Editor</option>
                     <option value="Audio Producer">Audio Producer</option>
+
+                    <!-- Community Engagement Roles -->
+                    <option value="Community Manager">Community Manager</option>
                     <option value="Moderator">Moderator</option>
-                    <option value="Sr. Moderator">Sr. Moderator</option>
                     <option value="Forums Moderator">Forums Moderator</option>
+                    <option value="Help Desk Agent">Help Desk Agent</option>
+
+                    <!-- Developer Outreach Roles -->
+                    <option value="Developer Relations Specialist">Developer Relations Specialist</option>
+
+                    <!-- Marketing Roles -->
+                    <option value="Content Strategist">Content Strategist</option>
+                    <option value="Advertising Coordinator">Advertising Coordinator</option>
+                    <option value="PR Specialist">PR Specialist</option>
+
+                    <!-- Support Roles -->
+                    <option value="Support Specialist">Support Specialist</option>
+                    <option value="Technical Support Agent">Technical Support Agent</option>
+
+                    <!-- Social Media Roles -->
+                    <option value="Social Media Manager">Social Media Manager</option>
+
+                    <!-- Events Roles -->
                     <option value="Community Event Coordinator">Community Event Coordinator</option>
                     <option value="Community Event Host">Community Event Host</option>
                     <option value="Server Event Coordinator">Server Event Coordinator</option>
@@ -146,7 +101,8 @@
     <footer>
         <p>Spilled Ink Studios - Bringing creative minds together!</p>
     </footer>
-<script src="scripts.js"></script>
+
+    <script src="scripts.js"></script>
     <script>
         function submitForm(event) {
             event.preventDefault();  // Prevent form submission to allow JavaScript handling
